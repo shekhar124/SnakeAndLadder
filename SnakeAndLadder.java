@@ -21,8 +21,9 @@ public class SnakeAndLadder {
 		else {
 			System.out.println("Snake Comes");
 			position-= diceRoll;
-		
 	}
-
+		position = 0;
+		position+=diceRoll;
 	}
 	}
+	

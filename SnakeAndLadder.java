@@ -14,16 +14,31 @@ public class SnakeAndLadder {
 			
 			System.out.println("the player stays in same position");
 		}
-		else if (checkOption != 0) {
+		else if (checkOption == 1) {
 			System.out.println("Ladder Comes" );
-			position+=diceRoll;
+			if (position+diceRoll<=100)
+			{
+				position+=diceRoll;
+			}
+			else if(position+diceRoll>100)
+			{
+				
+			}
 		}
 		else {
 			System.out.println("Snake Comes");
-			position-= diceRoll;
+			if ((position-diceRoll)<0)
+					{
+				position=0;
+				
+			}
+			else 
+			{
+				position-=diceRoll;
+			}
 	}
-		position = 0;
-		position+=diceRoll;
+		
+		
 	}
 	}
 	

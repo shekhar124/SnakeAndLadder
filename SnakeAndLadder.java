@@ -3,6 +3,7 @@ public class SnakeAndLadder {
 
 	public static void main(String[] args) {
 		int position = 0;
+		int diceRoll1=0;
 		while (position != 100) {
 		
 	int diceRoll = 1+(int)Math.floor(Math.random()*10)%6;
@@ -47,8 +48,10 @@ public class SnakeAndLadder {
 			}
 	}
 		
-		
+		System.out.println(diceRoll);
+		System.out.println("Player Position After Dice Roll "+position);
 	}
+		System.out.println("Number Of Dice Roll To Win " + diceRoll1 );
 		}
 	}
 	

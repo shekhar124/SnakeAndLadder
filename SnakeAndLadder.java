@@ -3,8 +3,12 @@ public class SnakeAndLadder {
 
 	public static void main(String[] args) {
 		int position = 0;
-		System.out.println("well come to snake and ladder position : " + position);
-
+		
+		
+	int diceRoll = 1+(int)Math.floor(Math.random()*10)%6;
+	
+		System.out.println("Dice Rolled:" +diceRoll);
+		
 	}
 
 }
